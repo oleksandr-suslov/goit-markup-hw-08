@@ -1,0 +1,86 @@
+:root {
+  --text-color: #757575;
+  --heading-color: #212121;
+  --nav-color: #2196f3;
+  --white-color: #ffffff;
+  --link-footer-color: #ffffff, 60%;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+.mail {
+  color: var(--nav-color);
+}
+.tel {
+  color: var(--text-color);
+}
+.logo {
+  color: var(--nav-color);
+  font-weight: 700;
+}
+.logo-up {
+  color: var(--heading-color);
+}
+.logo-down {
+  color: var(--white-color);
+}
+a.nav-link:hover {
+  color: var(--heading-color);
+}
+a.nav-link:focus {
+  color: var(--nav-color);
+}
+/* main */
+.header {
+  background-color: #2f303a;
+}
+.header-title {
+  color: var(--white-color);
+  font-weight: 900;
+}
+.header-link {
+  color: var(--white-color);
+  font-weight: 700;
+  background-color: var(--nav-color);
+}
+.title-adtantage {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+.title-cection {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.title-manager {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: var(--white-color);
+}
+.footer-link {
+  color: var(--link-footer-color);
+}
+/* portfolio */
+
+section.background {
+  color: #e5e5e5;
+}
+.button {
+  color: var(--heading-color);
+  background-color: #f5f4fa;
+}
+.title-projects {
+  color: var(--heading-color);
+  font-weight: 700;
+}
