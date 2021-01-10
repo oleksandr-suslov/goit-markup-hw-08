@@ -52,9 +52,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-link:active {
-  color: var(--nav-color);
-}
 .nav-link:hover,
 .nav-link:focus {
   color: var(--nav-color);
