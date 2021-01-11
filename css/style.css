@@ -22,10 +22,16 @@ a {
 ul {
   list-style-type: none;
 }
-.mail {
+.mail,
+a.tel:hover,
+a.tel:focus,
+ul.nav > li > a:hover,
+ul.nav > li > a:focus {
   color: var(--nav-color);
 }
-.tel {
+.tel,
+a.mail:hover,
+a.mail:focus {
   color: var(--text-color);
 }
 .logo {
@@ -35,7 +41,8 @@ ul {
   font-size: 26px;
   line-height: 1.24;
 }
-.logo-up {
+.logo-up,
+a.nav-link {
   color: var(--heading-color);
 }
 .logo-down {
@@ -52,13 +59,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--nav-color);
-}
-a.nav-link {
-  color: var(--heading-color);
-}
+
 /* main */
 .header {
   background-color: var(--background-footer);
