@@ -29,9 +29,7 @@ ul.nav > li > a:hover,
 ul.nav > li > a:focus {
   color: var(--nav-color);
 }
-.tel,
-a.mail:hover,
-a.mail:focus {
+.tel {
   color: var(--text-color);
 }
 .logo {
@@ -58,11 +56,22 @@ a.nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* main */
 .header {
   background-color: var(--background-footer);
+  outline: 2px solid crimson;
+}
+.panel-nav {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid crimson;
 }
 .header-title {
   color: var(--white-color);
@@ -72,17 +81,41 @@ a.nav-link {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
 }
+/* без флекса не центрируется*/
 .header-link {
   color: var(--white-color);
   background-color: var(--nav-color);
   font-weight: bold;
+  text-align: center;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.contaner {
+  padding-top: 94px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid crimson;
+}
+.contaner-item {
+  padding-bottom: 94px;
+}
+.list-item {
+  padding: 0px;
+  margin: 0px;
 }
 .title-adtantage {
   color: var(--heading-color);
@@ -90,9 +123,15 @@ a.nav-link {
   line-height: 1.14;
   text-transform: uppercase;
   font-size: 14px;
+  padding: 0px;
+  margin: 0px;
 }
+
 .text-adtantage {
   font-weight: 400;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .title-cection {
   color: var(--heading-color);
@@ -100,6 +139,8 @@ a.nav-link {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 .team {
   background-color: #f5f4fa;
@@ -109,19 +150,43 @@ a.nav-link {
   line-height: 1.9;
   text-align: center;
 }
-
+.manager-card {
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.manager-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 .title-manager {
   color: var(--heading-color);
   font-weight: 500;
+  margin: 0px;
 }
 
 .position {
   font-weight: 400;
+  margin: 0px;
 }
 
 /* footer */
 .footer {
   background-color: var(--background-footer);
+}
+.contaner-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid crimson;
+}
+.logo-footer {
+  margin: 0px;
 }
 .address .footer-link {
   font-weight: 400;
@@ -129,6 +194,7 @@ a.nav-link {
 .address {
   color: var(--white-color);
   font-style: normal;
+  margin-top: 20px;
 }
 .footer-link {
   color: var(--link-footer-color);
