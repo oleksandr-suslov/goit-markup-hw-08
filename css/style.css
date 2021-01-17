@@ -5,6 +5,9 @@
   --white-color: #ffffff;
   --link-footer-color: #ffffff, 60%;
   --background-footer: #2f303a;
+  --backgroun-contaner: #f5f4fa;
+  --backgroud-portfolio: #eeeeee;
+  --tomato: none;
 }
 
 body {
@@ -22,6 +25,9 @@ a {
 ul {
   list-style-type: none;
 }
+img {
+  display: block;
+}
 .mail,
 a.tel:hover,
 a.tel:focus,
@@ -31,6 +37,7 @@ ul.nav > li > a:focus {
 }
 .tel {
   color: var(--text-color);
+  margin-left: 50px;
 }
 .logo {
   color: var(--nav-color);
@@ -38,6 +45,7 @@ ul.nav > li > a:focus {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.24;
+  margin-right: 93px;
 }
 .logo-up,
 a.nav-link {
@@ -58,12 +66,19 @@ a.nav-link {
   letter-spacing: 0.02em;
   padding: 0px;
   margin: 0px;
+  display: flex;
 }
 
 /* main */
 .header {
   background-color: var(--background-footer);
-  outline: 2px solid crimson;
+  outline: 2px solid var(--tomato);
+}
+.nav .item-nav + .item-nav {
+  margin-left: 50px;
+}
+.contacts {
+  margin-left: auto;
 }
 .panel-nav {
   width: 1200px;
@@ -71,7 +86,9 @@ a.nav-link {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid crimson;
+  outline: 2px solid var(--tomato);
+  display: flex;
+  align-items: center;
 }
 .header-title {
   color: var(--white-color);
@@ -108,7 +125,7 @@ a.nav-link {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid crimson;
+  outline: 2px solid var(--tomato);
 }
 .contaner-item {
   padding-bottom: 94px;
@@ -116,7 +133,20 @@ a.nav-link {
 .list-item {
   padding: 0px;
   margin: 0px;
+  display: flex;
 }
+.list-box {
+  width: calc((100%-90px) / 4);
+}
+.list-item .list-box + .list-box,
+.list-item .card-item + .card-item,
+.list-item .manager-card + .manager-card {
+  margin-left: 30px;
+}
+.card-item {
+  display: inline;
+}
+
 .title-adtantage {
   color: var(--heading-color);
   font-weight: bold;
@@ -141,9 +171,10 @@ a.nav-link {
   text-align: center;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 50px;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--backgroun-contaner);
 }
 .title-manager .position {
   font-size: 16px;
@@ -177,13 +208,18 @@ a.nav-link {
 .footer {
   background-color: var(--background-footer);
 }
+.list-footer,
+.portfolio-list {
+  padding: 0px;
+  margin: 0px;
+}
 .contaner-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid crimson;
+  outline: 2px solid var(--tomato);
 }
 .logo-footer {
   margin: 0px;
@@ -203,21 +239,60 @@ a.nav-link {
 
 .button {
   color: var(--heading-color);
-  background-color: #f5f4fa;
+  background-color: var(--backgroun-contaner);
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   font-weight: 500;
+}
+.button-list .button-item + .button-item {
+  margin-left: 8px;
+}
+.button-list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list .list-item {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: var(--white-color);
+  border: 1px solid var(--backgroud-portfolio);
+  box-sizing: border-box;
+}
+.portfolio-list .list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-list .list-item:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
 }
 .title-projects {
   color: var(--heading-color);
   line-height: 2;
   letter-spacing: 0.06em;
   font-size: 18px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 .sizer {
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.88;
   font-weight: 400;
+  margin: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+}
+.img-item {
+  margin-bottom: 20px;
 }
