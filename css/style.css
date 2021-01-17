@@ -77,7 +77,6 @@ a.nav-link {
 .header {
   background-color: var(--background-footer);
   outline: 2px solid var(--tomato);
-  border-top: 10px solid green;
 }
 .nav .item-nav + .item-nav {
   margin-left: 50px;
