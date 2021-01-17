@@ -13,7 +13,7 @@
 body {
   color: var(--text-color);
   background-color: var(--white-color);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   line-height: 1.71;
   font-size: 14px;
   font-weight: 700;
@@ -31,8 +31,8 @@ img {
 .mail,
 a.tel:hover,
 a.tel:focus,
-ul.nav > li > a:hover,
-ul.nav > li > a:focus {
+.item-nav a:hover,
+.item-nav a:focus {
   color: var(--nav-color);
 }
 .tel {
@@ -41,11 +41,13 @@ ul.nav > li > a:focus {
 }
 .logo {
   color: var(--nav-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.24;
   margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .logo-up,
 a.nav-link {
@@ -55,7 +57,7 @@ a.nav-link {
   color: var(--white-color);
 }
 .logo-up .logo-down {
-  font-family: oleo Script;
+  font-family: oleo Script, sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.38;
@@ -68,11 +70,14 @@ a.nav-link {
   margin: 0px;
   display: flex;
 }
-
+.line-heder {
+  border: 1px solid #ececec;
+}
 /* main */
 .header {
   background-color: var(--background-footer);
   outline: 2px solid var(--tomato);
+  border-top: 10px solid green;
 }
 .nav .item-nav + .item-nav {
   margin-left: 50px;
@@ -244,6 +249,13 @@ a.nav-link {
   line-height: 1.63;
   text-align: center;
   font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--nav-color);
 }
 .button-list .button-item + .button-item {
   margin-left: 8px;
