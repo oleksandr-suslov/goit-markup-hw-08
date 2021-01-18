@@ -28,14 +28,14 @@ ul {
 img {
   display: block;
 }
-.mail,
+.current,
 a.tel:hover,
 a.tel:focus,
 .item-nav a:hover,
 .item-nav a:focus {
   color: var(--nav-color);
 }
-.tel {
+.link {
   color: var(--text-color);
   margin-left: 50px;
 }
@@ -225,9 +225,7 @@ a.nav-link {
   margin-right: auto;
   outline: 2px solid var(--tomato);
 }
-.logo-footer {
-  margin: 0px;
-}
+
 .address .footer-link {
   font-weight: 400;
 }
