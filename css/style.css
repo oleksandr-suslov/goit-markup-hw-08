@@ -36,8 +36,8 @@ img {
   display: block;
 }
 .current,
-a.tel:hover,
-a.tel:focus,
+a.link:hover,
+a.link:focus,
 .item-nav a:hover,
 .item-nav a:focus {
   color: var(--nav-color);
