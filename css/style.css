@@ -75,12 +75,12 @@ a.nav-link {
   margin: 0px;
   display: flex;
 }
-.line-heder {
-  border: 1px solid #ececec;
-}
+
 /* main */
 .header {
-  background-color: var(--background-footer);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
   outline: 2px solid var(--tomato);
 }
 .nav .item-nav + .item-nav {
@@ -90,16 +90,21 @@ a.nav-link {
   margin-left: auto;
 }
 .contaner {
-  padding: 24px 15px 25px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid var(--tomato);
 }
 .panel-nav {
   outline: 2px solid var(--tomato);
   display: flex;
   align-items: center;
+}
+.hero {
+  background-color: var(--background-footer);
+  padding: 200px 0px 200px;
 }
 .header-title {
   color: var(--white-color);
@@ -128,12 +133,13 @@ a.nav-link {
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 .contaner-main {
-  padding: 94px 15px 94px;
+  padding: 94px 0px 94px;
 }
 .contaner-item {
-  padding: 94px 15px 0px;
+  padding: 94px 0px 0px;
 }
 .list-item {
   padding: 0px;
@@ -205,20 +211,14 @@ a.nav-link {
 /* footer */
 .footer {
   background-color: var(--background-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .list-footer,
 .portfolio-list {
   padding: 0px;
   margin: 0px;
 }
-.contaner-footer {
-  padding: 60px 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid var(--tomato);
-}
-
 .address .footer-link {
   font-weight: 400;
 }
