@@ -263,6 +263,7 @@ a.nav-link {
 }
 .clients-list {
   display: flex;
+  justify-content: space-between;
 }
 .clients-item {
   width: calc((100% - 150px) / 6);
@@ -403,8 +404,8 @@ a.nav-link {
 .portfolio-list .list-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.list-item:hover,
-.list-item:focus {
+.portfolio-list .list-item:hover,
+.portfolio-list .list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
