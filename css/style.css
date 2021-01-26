@@ -243,13 +243,19 @@ a.nav-link {
   margin: 0px;
 }
 .social-link-box {
-  display: flex;
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--icon-color);
   border-radius: 50%;
 }
+
+.social-link-box,
+.clients-box {
+  display: flex;
+  color: var(--icon-color);
+  align-items: center;
+}
+
 .social-link-box:hover,
 .social-link-box:focus {
   color: var(--backgroud-portfolio);
@@ -274,16 +280,9 @@ a.nav-link {
   justify-content: center;
 }
 .clients-box {
-  color: var(--icon-color);
-  display: flex;
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-}
-
-.client-logo,
-.social-icon {
-  align-self: center;
 }
 
 .clients-box:hover,
