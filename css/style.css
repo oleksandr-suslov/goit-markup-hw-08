@@ -124,6 +124,18 @@ a.nav-link {
   background-repeat: no-repeat;
   background-position: center;
 }
+.hero::before {
+  content: "";
+  background-color: rgba(47, 48, 58, 0.4);
+  box-sizing: content-box;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  display: inline;
+
+  top: 0;
+}
 .header-title {
   color: var(--white-color);
   font-weight: 900;
@@ -221,6 +233,7 @@ a.nav-link {
   border-radius: 0px 0px 4px 4px;
 }
 .manager-description {
+  background-color: var(--white-color);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -412,7 +425,7 @@ a.nav-link {
   margin-bottom: 0px;
 }
 .portfolio-list .list-item:hover,
-.portfolio-list .list-item:focus {
+.portfolio-list .list-item:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
