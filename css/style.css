@@ -120,22 +120,13 @@ a.nav-link {
 .hero {
   padding: 200px 0px 200px;
   background-color: var(--background-footer);
-  background-image: url("../image/fon_hero.jpg");
+  /* background-image: url("../image/fon_hero.jpg"); */
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../image/fon_hero.jpg") center/cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero::before {
-  content: "";
-  background-color: rgba(47, 48, 58, 0.4);
-  box-sizing: content-box;
-  position: absolute;
-  height: 100%;
-  width: 100%;
 
-  display: inline;
-
-  top: 0;
-}
 .header-title {
   color: var(--white-color);
   font-weight: 900;
