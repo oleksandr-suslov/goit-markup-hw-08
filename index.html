@@ -47,7 +47,19 @@
                     <div class="contaner">
                         <!--Header-->
                         <h1 class="header-title">Эффективные решения для вашего бизнеса</h1>
-                        <a href="#" class="header-link">Заказать услугу</a>
+                        <button data-modal-open class="button" type="button">Заказать услугу</button>
+
+                        <div data-modal class="backdrop is-hidden">
+                            <div class="modal">
+                                <button data-modal-close class="modal-close" type="button">
+                                        <svg class="modal-icon-close" width=11px height=11px>
+                                            <use href="./image/sprite.svg#.icon-close"></use>
+                                        </svg>
+                                    
+
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 <!-- </div> -->
             </section>
@@ -100,9 +112,24 @@
                             <div class="contaner">
                                 <h2 class="title-cection">Чем мы занимаемся</h2>
                                 <ul class="list-item">
-                                <li class="card-item"><img src="./image/img1.jpg" width="370" alt="img1"></li>
-                                <li class="card-item"><img src="./image/img2.jpg" width="370" alt="img2"></li>
-                                <li class="card-item"><img src="./image/img3.jpg" width="370" alt="img3"></li>
+                                    <li class="card-item">
+                                        <img src="./image/img1.jpg" width="370" alt="img1">
+                                        <div class="description-projects">
+                                            <p class="title-projects">Десктопные приложения</p>
+                                        </div>
+                                    </li>
+                                    <li class="card-item">
+                                        <img src="./image/img2.jpg" width="370" alt="img2">
+                                        <div class="description-projects">
+                                            <p class="title-projects">Мобильные приложения</p>
+                                        </div>
+                                    </li>
+                                    <li class="card-item">
+                                        <img src="./image/img3.jpg" width="370" alt="img3">
+                                        <div class="description-projects">
+                                            <p class="title-projects">Дизайнерские решения</p>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div> 
                     </section>
@@ -359,6 +386,6 @@
                 </div>
             </div>
         </footer>
-
+        <script src="./js/modal.js"></script>
     </body>
 </html>
