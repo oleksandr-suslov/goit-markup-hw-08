@@ -131,11 +131,20 @@ a.nav-link {
 }
 .contaner,
 .header-title,
-.contaner .button {
+.hero-button {
   margin-left: auto;
   margin-right: auto;
 }
-
+.button {
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
 .panel-nav {
   outline: 2px solid var(--tomato);
   display: flex;
@@ -163,20 +172,18 @@ a.nav-link {
   margin-bottom: 30px;
 }
 
-.contaner .button {
+.hero-button {
   color: var(--white-color);
   background-color: var(--nav-color);
   display: block;
-  text-align: center;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  border-radius: 4px;
   padding: 10px 20px;
 }
-
 .modal {
   width: 528px;
   height: 581px;
@@ -225,10 +232,11 @@ a.nav-link {
   fill: currentColor;
 }
 .contaner-main {
-  padding: 94px 0px 94px;
+  padding-bottom: 94px;
 }
-.contaner-item {
-  padding: 94px 0px 0px;
+.contaner-item,
+.contaner-main {
+  padding-top: 94px;
 }
 
 .advantage-icon {
@@ -452,23 +460,12 @@ a.nav-link {
 }
 
 /* ======================portfolio=================== */
-.button {
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 0;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-}
 
 .button-list .button {
+  font-size: 16px;
+  line-height: 1.63;
+  font-weight: 500;
+  height: 38px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
