@@ -711,6 +711,7 @@ form {
   border: 2px solid var(--heading-color);
   border-radius: 2px;
   margin-right: 7px;
+  transition: 250ms var(--timing-function);
 }
 .checkbox:checked + .check-icon {
   background-color: var(--nav-color);
