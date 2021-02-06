@@ -315,6 +315,7 @@ a.nav-link {
 .social-link-box:focus {
   color: var(--backgroud-portfolio);
   background-color: var(--nav-color);
+  outline: var(--nav-color);
 }
 .social-icon {
   width: 20px;
@@ -459,6 +460,7 @@ a.nav-link {
 .button:focus {
   color: var(--white-color);
   background-color: var(--nav-color);
+  outline: var(--nav-color);
 }
 .button-list .button-item + .button-item {
   margin-left: 8px;
@@ -676,6 +678,7 @@ form {
 .modal-input:hover,
 .modal-input:focus {
   border: 1px solid var(--nav-color);
+  outline: var(--nav-color);
 }
 .modal-input:hover + .modal-icon-input,
 .modal-input:focus + .modal-icon-input,
