@@ -139,8 +139,6 @@ a.nav-link {
   text-align: center;
   cursor: pointer;
   border: 0;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
@@ -153,7 +151,6 @@ a.nav-link {
 .hero {
   padding: 200px 0px 200px;
   background-color: var(--background-footer);
-  /* background-image: url("../image/fon_hero.jpg"); */
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../image/fon_hero.jpg");
   background-repeat: no-repeat;
@@ -456,11 +453,13 @@ a.nav-link {
   color: var(--heading-color);
   background-color: var(--backgroun-contaner);
 }
-.button:hover,
-.button:focus {
+.button-list .button:hover,
+.button-list .button:focus {
   color: var(--white-color);
   background-color: var(--nav-color);
   outline: var(--nav-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-list .button-item + .button-item {
   margin-left: 8px;
@@ -623,13 +622,6 @@ a.nav-link {
   padding: 40px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 448px;
-  margin: 0 auto;
-}
-
 .modal-label {
   display: flex;
   flex-direction: column;
@@ -686,8 +678,8 @@ form {
 .modal-close:focus > .modal-icon-close {
   fill: var(--nav-color);
 }
-.input-name {
-  font-weight: 400px;
+.modal-label .input-name {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
