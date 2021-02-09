@@ -667,16 +667,26 @@ a.nav-link {
   transition: 250ms var(--timing-function);
 }
 
+.modal-icon-input:focus + .modal-input,
+.modal-icon-input:hover + .modal-input,
 .modal-input:hover,
 .modal-input:focus {
   border: 1px solid var(--nav-color);
   outline: var(--nav-color);
+  cursor: pointer;
 }
-.modal-input:hover + .modal-icon-input,
-.modal-input:focus + .modal-icon-input,
+
+.modal-label-box:hover > .modal-icon-input,
+.modal-label-box:focus-within > .modal-icon-input,
 .modal-close:hover > .modal-icon-close,
 .modal-close:focus > .modal-icon-close {
   fill: var(--nav-color);
+  cursor: pointer;
+}
+
+.modal-label-box {
+  display: flex;
+  flex-direction: column;
 }
 .modal-label .input-name {
   font-weight: 400;
@@ -702,7 +712,8 @@ a.nav-link {
   justify-content: center;
   align-items: center;
   width: 16px;
-  height: 15px;
+  height: 16px;
+  /* outline: 2px solid var(--heading-color); */
   border: 2px solid var(--heading-color);
   border-radius: 2px;
   margin-right: 7px;
@@ -713,4 +724,5 @@ a.nav-link {
   background-origin: border-box;
   background-size: contain;
   border-color: var(--nav-color);
+  border: transparent;
 }
