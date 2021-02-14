@@ -7,9 +7,10 @@
 .address {
   color: $white-color;
   font-style: normal;
-  .footer-link {
-    font-weight: 400;
-  }
+}
+.address,
+.footer-link {
+  font-weight: 400;
 }
 
 .footer-link {

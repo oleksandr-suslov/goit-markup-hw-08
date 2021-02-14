@@ -86,6 +86,8 @@
   left: 0;
   position: absolute;
   width: 100%;
+  border-right: 1px solid $portfolio-backgroun;
+  border-left: 1px solid $portfolio-backgroun;
 }
 .portfolio-overlay {
   position: absolute;

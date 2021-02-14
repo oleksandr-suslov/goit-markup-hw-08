@@ -78,6 +78,7 @@
   background: $description-projects-fon;
   .title-projects {
     line-height: 1.142;
+    font-size: inherit;
     margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
@@ -89,13 +90,14 @@
   .list-item & + & {
     margin-left: 30px;
   }
-}
 
-.title-adtantage {
-  color: $heading-background;
-  line-height: 1.14;
-  text-transform: uppercase;
-  padding: 0px;
+  .title-adtantage {
+    color: $heading-background;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+    padding: 0px;
+  }
 }
 
 .text-adtantage {
