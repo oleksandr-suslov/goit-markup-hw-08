@@ -28,7 +28,6 @@
 .hero-button {
   @extend %button;
   @extend %hero-text-decoration;
-
   background-color: $accent-color;
   display: block;
   font-size: 16px;
@@ -64,6 +63,9 @@
 }
 .card-item {
   position: relative;
+  .list-item & + & {
+    margin-left: 30px;
+  }
 }
 
 .description-projects {
@@ -84,11 +86,9 @@
 }
 .list-box {
   width: calc((100%-90px) / 4);
-}
-.list-item .list-box + .list-box,
-.list-item .card-item + .card-item,
-.list-item .manager-card + .manager-card {
-  margin-left: 30px;
+  .list-item & + & {
+    margin-left: 30px;
+  }
 }
 
 .title-adtantage {
@@ -127,6 +127,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  .list-item & + & {
+    margin-left: 30px;
+  }
 }
 .manager-description {
   background-color: $white-color;
@@ -152,7 +155,8 @@
   margin: 0px;
 }
 .social-link-box {
-  justify-content: center;
+  @extend %center-position-flex;
+  color: $icon-color;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -165,7 +169,6 @@
   }
 }
 
-.social-link-box,
 .clients-box {
   display: flex;
   color: $icon-color;
