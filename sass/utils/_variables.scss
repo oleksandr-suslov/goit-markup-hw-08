@@ -1,10 +1,12 @@
 $main-text-color: #757575;
 $heading-background: #212121;
-$acent-color: #2196f3;
+$header-border: #ececec;
+$accent-color: #2196f3;
 $white-color: #ffffff;
-$link-footer-color: #ffffff, 60%;
+$link-footer-color: rgba(255, 255, 255, 0.6);
 $description-projects-fon: rgba(47, 48, 58, 0.8);
 $soc-footer-color: rgba(255, 255, 255, 0.1);
+$backdrop-background: rgba(0, 0, 0, 0.2);
 $footer-background: #2f303a;
 $contaner-backgroun: #f5f4fa;
 $portfolio-backgroun: #eeeeee;
@@ -12,14 +14,6 @@ $tomato: none;
 $icon-color: #afb1b8;
 $portfolio-clients-fon: rgba(33, 150, 243, 0.9);
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-%text {
-  color: var(--text-color);
-  background-color: var(--white-color);
-  font-family: "Roboto", sans-serif;
-  line-height: 1.71;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-}
-
+$main-font: "Roboto";
+$accent-font: "Raleway";
+$logo-font: "oleo Script";

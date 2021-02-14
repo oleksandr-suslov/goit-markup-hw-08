@@ -1,0 +1,94 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.link {
+  color: $main-text-color;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-icon {
+  fill: currentColor;
+  align-self: center;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.nav-link {
+}
+.logo {
+  font-family: $accent-font, sans-serif;
+  font-size: 26px;
+  line-height: 1.24;
+  margin-right: 93px;
+  transition: 250ms $timing-function;
+  color: $accent-color;
+
+  &-up {
+    color: $heading-background;
+
+    font-weight: 400;
+    line-height: 1.38;
+  }
+  &-down {
+    color: $white-color;
+
+    font-weight: 400;
+    line-height: 1.38;
+  }
+}
+
+.nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+
+  .link {
+    transition: 250ms $timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .nav-link {
+    color: $heading-background;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 250ms $timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .current {
+    transition: 250ms $timing-function;
+    color: $accent-color;
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      top: 32px;
+      border: 2px solid $accent-color;
+      border-radius: 5px;
+      background: $accent-color;
+    }
+  }
+}
+// I don't understand
+.nav .item-nav + .item-nav {
+  margin-left: 50px;
+}
+.contacts {
+  margin-left: auto;
+}
+.panel-nav {
+  display: flex;
+  align-items: center;
+}

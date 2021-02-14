@@ -1,0 +1,209 @@
+// ===HERO===
+.hero {
+  padding: 200px 0px 200px;
+  background-color: $footer-background;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/fon_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%hero-text-decoration {
+  color: $white-color;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  @extend %hero-text-decoration;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  width: 680px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  @extend %button;
+  @extend %hero-text-decoration;
+
+  background-color: $accent-color;
+  display: block;
+  font-size: 16px;
+  line-height: 1.88;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+// ===ADVANTAGE===
+
+.contaner-main {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.contaner-item {
+  padding-top: 94px;
+}
+
+.advantage-icon {
+  margin-bottom: 30px;
+  padding: 25px 0px 25px;
+  width: 270px;
+  height: 120px;
+  background-color: $contaner-backgroun;
+  display: inline-flex;
+  justify-content: center;
+}
+.list-item {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+.card-item {
+  position: relative;
+}
+
+.description-projects {
+  @extend %center-position-flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background: $description-projects-fon;
+  .title-projects {
+    line-height: 1.142;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+}
+.list-box {
+  width: calc((100%-90px) / 4);
+}
+.list-item .list-box + .list-box,
+.list-item .card-item + .card-item,
+.list-item .manager-card + .manager-card {
+  margin-left: 30px;
+}
+
+.title-adtantage {
+  color: $heading-background;
+  line-height: 1.14;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+.text-adtantage {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+// ===TEAM===
+
+.title-cection {
+  color: $heading-background;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team {
+  background-color: $contaner-backgroun;
+}
+.position {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.manager-card {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.manager-description {
+  background-color: $white-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: center;
+}
+.title-manager {
+  color: $heading-background;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list,
+.social-item,
+.clients-list {
+  padding: 0px;
+  margin: 0px;
+}
+.social-link-box {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $portfolio-backgroun;
+    background-color: $accent-color;
+    outline: $accent-color;
+  }
+}
+
+.social-link-box,
+.clients-box {
+  display: flex;
+  color: $icon-color;
+  align-items: center;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+// ===CLIENTS===
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  display: flex;
+  justify-content: center;
+}
+.clients-box {
+  height: 90px;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  transition: 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client-logo {
+  display: block;
+  width: 175px;
+  height: 50px;
+  fill: currentColor;
+}

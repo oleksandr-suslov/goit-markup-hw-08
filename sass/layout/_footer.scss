@@ -1,0 +1,90 @@
+.list-footer,
+.portfolio-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.address {
+  color: $white-color;
+  font-style: normal;
+  .footer-link {
+    font-weight: 400;
+  }
+}
+
+.footer-link {
+  color: $link-footer-color;
+}
+.list-footer {
+  margin-top: 20px;
+}
+.footer-box {
+  margin-right: 70px;
+}
+.footer {
+  background-color: $footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .contaner {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-social:not(:last-child) {
+  display: block;
+  margin-right: 93px;
+}
+.footer-social .social-list {
+  margin-top: 20px;
+}
+.join {
+  color: $white-color;
+  text-transform: uppercase;
+  line-height: 1.14;
+}
+.footer-link-box {
+  background-color: $soc-footer-color;
+}
+.social-list {
+  .social-item {
+    margin-right: 10px;
+  }
+  .social-item:nth-last-child(-n + 1) {
+    margin-right: 0px;
+  }
+}
+.social-link-box {
+  .footer-link-box {
+    color: $white-color;
+  }
+  .footer-icon {
+    fill: $white-color;
+  }
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  .hero-button {
+    @extend %center-position-flex;
+  }
+}
+.text-input {
+  margin-right: 12px;
+  width: 358px;
+  background-color: $footer-background;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $white-color;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
