@@ -17,27 +17,26 @@
   margin-left: 30px;
   margin-right: 10px;
 }
-.nav-link {
-}
+// .panel-nav .logo {
+//   // margin-right: 93px;
+// }
 .logo {
   font-family: $accent-font, sans-serif;
   font-size: 26px;
-  line-height: 1.24;
-  margin-right: 93px;
+  line-height: 1.174;
   transition: 250ms $timing-function;
   color: $accent-color;
 
-  &-up {
-    color: $heading-background;
-
+  &-up,
+  &-down {
     font-weight: 400;
     line-height: 1.38;
   }
+  &-up {
+    color: $heading-background;
+  }
   &-down {
     color: $white-color;
-
-    font-weight: 400;
-    line-height: 1.38;
   }
 }
 
@@ -81,14 +80,65 @@
     }
   }
 }
-// I don't understand
+
 .nav .item-nav + .item-nav {
   margin-left: 50px;
 }
-.contacts {
-  margin-left: auto;
-}
+// .contacts {
+//   margin-left: auto;
+// }
 .panel-nav {
   display: flex;
   align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+.menu-button {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-color: $white-color;
+  background-color: $white-color;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+//mobile--ok
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .logo {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  // в высоте хедера лишние - 5px
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+  }
+  .menu-button {
+    display: inline-block;
+  }
+}
+
+//tablet -- ok
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+    .link:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+//desktop--ok
+@media screen and (min-width: 1200px) {
 }

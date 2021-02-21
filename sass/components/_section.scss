@@ -1,6 +1,14 @@
+%hero-text-decoration {
+  color: $white-color;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // ===HERO===
+
 .hero {
-  padding: 200px 0px 200px;
+  padding: 118px 0px 118px;
   background-color: $footer-background;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/fon_hero.jpg");
@@ -8,20 +16,14 @@
   background-position: center;
 }
 
-%hero-text-decoration {
-  color: $white-color;
-  letter-spacing: 0.06em;
-  margin-left: auto;
-  margin-right: auto;
-}
 .hero-title {
   @extend %hero-text-decoration;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   text-transform: uppercase;
-  width: 680px;
+  width: 360px;
   margin-bottom: 30px;
 }
 
@@ -42,6 +44,9 @@
 .contaner-main {
   padding-bottom: 94px;
   padding-top: 94px;
+
+  //   display: flex;
+  //   flex-wrap: wrap;
 }
 .contaner-item {
   padding-top: 94px;
@@ -60,12 +65,16 @@
   padding: 0px;
   margin: 0px;
   display: flex;
+  // flex-wrap: wrap;
 }
 .card-item {
   position: relative;
-  .list-item & + & {
-    margin-left: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
+}
+.projects {
+  display: none;
 }
 
 .description-projects {
@@ -87,8 +96,8 @@
 }
 .list-box {
   width: calc((100%-90px) / 4);
-  .list-item & + & {
-    margin-left: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 
   .title-adtantage {
@@ -109,8 +118,7 @@
 
 .title-cection {
   color: $heading-background;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font-height(28, 32.81);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -129,8 +137,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  .list-item & + & {
-    margin-left: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .manager-description {
@@ -187,6 +195,7 @@
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .clients-item {
@@ -212,3 +221,60 @@
   height: 50px;
   fill: currentColor;
 }
+
+//mobile
+@media screen and (max-width: 767px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/mobile/fon_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantage-icon {
+    width: inherit;
+  }
+  .list-item {
+    display: inline;
+    justify-content: center;
+  }
+  // осталось отцентрировать
+  .list-box {
+    width: 450px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // &:not(:last-child) {
+    //   margin-right: 0;
+    // }
+  }
+}
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/tablet/fon_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+//desktop
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 0;
+    display: flex;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.363;
+    width: 680px;
+  }
+  .hero {
+    padding: 200px 0px 200px;
+  }
+  .title-cection {
+    @include font-height(36, 42.19);
+  }
+}
+
+// @include font-height(16, 20);

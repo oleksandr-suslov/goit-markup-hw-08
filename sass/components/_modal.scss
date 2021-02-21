@@ -1,6 +1,6 @@
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -45,7 +45,7 @@
 .modal-title {
   display: block;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: $heading-background;
   margin-bottom: 12px;
@@ -91,10 +91,11 @@
   transition: 250ms $timing-function;
 }
 .text-check,
-.link-check {
+.link-check,
+.modal-label .input-name {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
 }
 .link-check {
   color: $accent-color;
@@ -121,9 +122,9 @@
   flex-direction: column;
 }
 .modal-label .input-name {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.167;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
@@ -154,4 +155,29 @@
   background-size: contain;
   border-color: $accent-color;
   border: transparent;
+}
+//mobile
+@media screen and (max-width: 767px) {
+}
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+//desktop
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .text-check,
+  .link-check {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  .modal-input {
+    font-size: 12px;
+  }
+  .modal-title {
+    line-height: 1.15;
+  }
 }

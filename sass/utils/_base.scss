@@ -7,9 +7,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -17,19 +19,24 @@ h4,
 p {
   margin: 0px;
 }
+
 ul {
   list-style-type: none;
 }
+
 img {
   display: block;
 }
+
 .contaner {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
 %button {
   text-align: center;
   cursor: pointer;
@@ -38,6 +45,7 @@ img {
   transition: background-color 250ms $timing-function,
     color 250ms $timing-function;
 }
+
 %center-position-flex {
   display: flex;
   justify-content: center;
