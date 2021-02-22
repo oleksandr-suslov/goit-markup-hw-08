@@ -23,7 +23,7 @@
   line-height: 1.615;
   text-align: center;
   text-transform: uppercase;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 30px;
 }
 
@@ -44,13 +44,10 @@
 .contaner-main {
   padding-bottom: 94px;
   padding-top: 94px;
-
-  //   display: flex;
-  //   flex-wrap: wrap;
 }
-.contaner-item {
-  padding-top: 94px;
-}
+// .contaner-item {
+//   padding-top: 94px;
+// }
 
 .advantage-icon {
   margin-bottom: 30px;
@@ -98,6 +95,7 @@
   width: calc((100%-90px) / 4);
   &:not(:last-child) {
     margin-right: 30px;
+    display: block;
   }
 
   .title-adtantage {
@@ -195,7 +193,7 @@
 
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
 }
 .clients-item {
@@ -204,6 +202,7 @@
   justify-content: center;
 }
 .clients-box {
+  // width: inherit;
   height: 90px;
   border: 1px solid $icon-color;
   border-radius: 4px;
@@ -217,7 +216,7 @@
 
 .client-logo {
   display: block;
-  width: 175px;
+  min-width: 175px;
   height: 50px;
   fill: currentColor;
 }
@@ -230,22 +229,38 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  // == advantage
+  .list-item {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list-box,
   .advantage-icon {
     width: inherit;
   }
-  .list-item {
-    display: inline;
-    justify-content: center;
+  .list-box:not(:last-child) {
+    margin-bottom: 30px;
   }
-  // осталось отцентрировать
-  .list-box {
-    width: 450px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // &:not(:last-child) {
-    //   margin-right: 0;
-    // }
+  //=== team
+  .manager-card {
+    width: 100%;
+    max-width: 450px;
+    align-content: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+  // === clients
+  .clients-list {
+    flex-flow: column wrap;
+  }
+  // .clients-item {
+  //   width: calc((100% - 60px) / 2);
+  // }
 }
 
 //tablet

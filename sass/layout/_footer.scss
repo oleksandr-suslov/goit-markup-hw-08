@@ -33,6 +33,8 @@
   .contaner {
     display: block;
     text-align: center;
+    display: flex;
+    align-items: baseline;
   }
 }
 .footer-item {
@@ -70,8 +72,13 @@
     @extend %center-position-flex;
   }
 }
+.footer-social:not(:last-child) {
+  margin-bottom: 60px;
+}
 .text-input {
-  width: 450px;
+  width: 100%;
+  min-width: 290px;
+  max-width: 450px;
   margin-bottom: 20px;
   background-color: $footer-background;
   padding: 15px;
@@ -90,15 +97,17 @@
 }
 //mobile--ok
 @media screen and (max-width: 767px) {
+  .footer {
+    .contaner {
+      display: block;
+    }
+  }
   .subscribe {
     display: block;
     align-content: center;
   }
   .footer-box {
     margin-right: 0;
-  }
-  .footer-social:not(:last-child) {
-    margin-bottom: 60px;
   }
   .social-list {
     justify-content: center;
@@ -109,24 +118,16 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     .contaner {
-      display: flex;
-      align-items: baseline;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
   }
-
-  //нужно исправить
-  .text-input {
-    margin-left: 130px;
-    margin-right: 130px;
+  .footer-social:last-child {
+    width: 100%;
   }
   .subscribe {
     display: block;
     align-content: center;
-  }
-  .join {
-    margin-top: 60px;
   }
 }
 
@@ -139,13 +140,13 @@
   }
   .footer {
     .contaner {
-      display: flex;
-      align-items: baseline;
       text-align: left;
     }
   }
+  .footer-social:not(:last-child) {
+    margin-bottom: 0px;
+  }
   .footer-social:not(:nth-child(even)) {
-    display: block;
     margin-right: 93px;
   }
 }
