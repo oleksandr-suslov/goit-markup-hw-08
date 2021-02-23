@@ -119,6 +119,7 @@
   @include font-height(28, 32.81);
   text-align: center;
   margin-bottom: 50px;
+  align-items: center;
 }
 .team {
   background-color: $contaner-backgroun;
@@ -193,16 +194,17 @@
 
 .clients-list {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .clients-item {
-  width: calc((100% - 150px) / 6);
+  min-width: calc((100% - 150px) / 6);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .clients-box {
-  // width: inherit;
+  min-width: inherit;
   height: 90px;
   border: 1px solid $icon-color;
   border-radius: 4px;
@@ -216,7 +218,7 @@
 
 .client-logo {
   display: block;
-  min-width: 175px;
+  min-width: 70px;
   height: 50px;
   fill: currentColor;
 }
@@ -255,12 +257,16 @@
     }
   }
   // === clients
-  .clients-list {
-    flex-flow: column wrap;
+
+  .clients-item {
+    min-width: 130px;
+    max-width: 210px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
-  // .clients-item {
-  //   width: calc((100% - 60px) / 2);
-  // }
+  .clients-list {
+    margin-bottom: -30px;
+  }
 }
 
 //tablet
@@ -282,7 +288,7 @@
   .hero-title {
     font-size: 44px;
     line-height: 1.363;
-    width: 680px;
+    max-width: 680px;
   }
   .hero {
     padding: 200px 0px 200px;

@@ -305,6 +305,7 @@ img {
   line-height: 1.172;
   text-align: center;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .team {
@@ -384,16 +385,19 @@ img {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
+  min-width: calc((100% - 150px) / 6);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .clients-box {
+  min-width: inherit;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -407,7 +411,7 @@ img {
 
 .client-logo {
   display: block;
-  min-width: 175px;
+  min-width: 70px;
   height: 50px;
   fill: currentColor;
 }
@@ -440,8 +444,14 @@ img {
   .manager-card:not(:last-child) {
     margin-bottom: 30px;
   }
+  .clients-item {
+    min-width: 130px;
+    max-width: 210px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
   .clients-list {
-    flex-flow: column wrap;
+    margin-bottom: -30px;
   }
 }
 
@@ -461,7 +471,7 @@ img {
   .hero-title {
     font-size: 44px;
     line-height: 1.363;
-    width: 680px;
+    max-width: 680px;
   }
   .hero {
     padding: 200px 0px 200px;
