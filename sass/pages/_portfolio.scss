@@ -139,11 +139,18 @@
   .portfolio-list {
     .list-item {
       max-width: 354px;
+      height: 440px;
+      .portfolio-link {
+        height: 440px;
+      }
     }
   }
   .button-list {
     justify-content: center;
     margin-bottom: 22px;
+  }
+  .description-item {
+    max-height: 146px;
   }
 }
 
@@ -156,6 +163,7 @@
   .portfolio-list {
     .list-item {
       max-width: 370px;
+      height: 404px;
     }
   }
 }
