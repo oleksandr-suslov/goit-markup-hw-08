@@ -385,6 +385,8 @@ img {
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero/mob-fon-hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -582,12 +584,16 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     background: url("../images/hero/tab-fon-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background: url("../images/hero/tab-fon-hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -1177,10 +1183,17 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-list .list-item {
     max-width: 354px;
+    height: 440px;
+  }
+  .portfolio-list .list-item .portfolio-link {
+    height: 440px;
   }
   .button-list {
     justify-content: center;
     margin-bottom: 22px;
+  }
+  .description-item {
+    max-height: 146px;
   }
 }
 
@@ -1190,6 +1203,7 @@ img {
   }
   .portfolio-list .list-item {
     max-width: 370px;
+    height: 404px;
   }
 }
 /*# sourceMappingURL=main.css.map */

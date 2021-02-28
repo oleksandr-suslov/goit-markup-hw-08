@@ -19,10 +19,8 @@
   screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero/mob-fon-hero@2x.jpg");
-    // background-repeat: no-repeat;
-    // // max-width: 480px;
-    // background-position: center;
-    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -172,9 +170,7 @@
 
 .clients-box {
   @extend %center-position-flex;
-  // display: flex;
   color: $icon-color;
-  // align-items: center;
 }
 .clients-list {
   display: flex;
@@ -187,9 +183,6 @@
   max-width: calc((100% - 60px) / 2);
   margin: 15px;
   @extend %center-position-flex;
-  // display: flex;
-  // justify-items: center;
-  // align-items: center;
 }
 .clients-box {
   min-width: inherit;
@@ -222,16 +215,16 @@
 @media screen and (min-width: 768px) {
   .hero {
     background: url("../images/hero/tab-fon-hero.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
       background: url("../images/hero/tab-fon-hero@2x.jpg");
-      // background-repeat: no-repeat;
-      // background-position: center;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
