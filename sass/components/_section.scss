@@ -50,11 +50,10 @@
 }
 
 // ===ADVANTAGE===
-
 .list-item {
-  display: block;
   margin: -15px;
 }
+
 .list-box {
   margin: 15px;
   max-width: 450px;
@@ -112,11 +111,13 @@
 }
 
 .manager-card {
+  display: inline-block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 450px;
+  height: auto;
   margin: 15px;
 }
 
@@ -170,9 +171,10 @@
 // ===CLIENTS===
 
 .clients-box {
-  display: flex;
+  @extend %center-position-flex;
+  // display: flex;
   color: $icon-color;
-  align-items: center;
+  // align-items: center;
 }
 .clients-list {
   display: flex;
@@ -184,9 +186,10 @@
   min-width: calc((320px - 60px) / 2);
   max-width: calc((100% - 60px) / 2);
   margin: 15px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  @extend %center-position-flex;
+  // display: flex;
+  // justify-items: center;
+  // align-items: center;
 }
 .clients-box {
   min-width: inherit;
@@ -248,6 +251,9 @@
   .manager-card {
     max-width: calc((100% - 60px) / 2);
   }
+  .clients-item {
+    max-width: calc((100% - 90px) / 3);
+  }
 }
 
 //desktop==================================================================================
@@ -271,6 +277,8 @@
     padding: 200px 0 200px;
     .hero-title {
       @include font-height(44, 60);
+      max-width: 696px;
+      padding: 0 10px;
     }
   }
   .container-main {
@@ -299,7 +307,6 @@
     margin: 15px;
   }
   .description-projects {
-    // @extend %center-position-flex;
     display: flex;
     justify-content: center;
     align-items: center;
