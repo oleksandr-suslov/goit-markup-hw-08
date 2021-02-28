@@ -2,59 +2,8 @@
 @import "utils/base";
 @import "utils/mixin";
 @import "layout/header";
-// @import "components/mobile-menu";
+@import "components/mobile-menu";
 @import "components/section";
 @import "components/modal";
 @import "layout/footer";
 @import "pages/portfolio";
-
-// минимальная ширина
-// .container {
-//   min-width: 320px;
-// }
-
-// максимальная ширина
-// .container.responsive {
-//   max-width: 1140px;
-// }
-
-//===============//==================
-// .container {
-//   max-width: 1170px;
-//   min-width: 320px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   border: 1px solid black;
-//   border-radius: 10px;
-//   padding: 10px;
-// }
-
-// .element {
-//   padding: 20px;
-//   border-radius: 10px;
-//   text-align: center;
-//   font-size: 24px;
-//   color: #fff;
-// }
-
-// /*
-//  * Переопределяем или добавляем новые стили для блоков на более широких экранах
-//  */
-// @media screen and (min-width: 768px) {
-//   .container {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//   }
-
-//   .element {
-//     flex-basis: calc(100% / 2);
-//     font-size: 32px;
-//   }
-// }
-
-// @media screen and (min-width: 1024px) {
-//   .element {
-//     flex-basis: calc(100% / 3);
-//   }
-// }

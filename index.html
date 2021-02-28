@@ -15,7 +15,7 @@
         <!-- main container-->
         <header class="header">
             <!--navigation-->
-            <div class="panel-nav contaner">
+            <div class="panel-nav container">
                     <a href="./index.html" class="logo">Web<span class="logo-up">Studio</span></a>
                     <nav>
                         <ul class="nav">
@@ -26,22 +26,21 @@
                     </nav>
                     <div class="nav contacts">
                         <a href="mailto:info@devstudio.com" class="link">
-                            <svg class="nav-icon" width="16" height="12">
+                            <svg class="nav-icon">
                                 <use href="./images/sprite.svg#.icon-envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                         <a href="tel:+380961111111" class="link">
-                            <svg class="nav-icon" width="10" height="16">
+                            <svg class="nav-icon" >
                                 <use href="./images/sprite.svg#.icon-phone"></use>
                             </svg>
                             +38 096 111 11 11
                         </a>
                     </div>
 
-                    <button data-menu-button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-contaner">
+                    <button data-menu-button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container">
                         <svg class="menu-icon" width="40px" height="40px">
-                            <!-- <use href="./images/sprite.svg#.icon-close"></use> -->
                             <use href="./images/sprite.svg#.icon-menu"></use>
                         </svg> 
                     </button>
@@ -52,7 +51,7 @@
                     <!--hero-->
                     <section class="hero">
                 
-                            <div class="contaner">
+                            <div class="container">
                                 <!--Header-->
                                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                                 <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
@@ -60,8 +59,8 @@
                         
                     </section>
                     <!--advantage-->
-                    <section class="contaner-main">
-                            <div class="contaner">
+                    <section class="container-main">
+                            <div class="container">
                                 <h2 hidden>Чем мы отличаемся</h2>
                                 <ul class="list-item">
                                     <li class="list-box">
@@ -104,8 +103,8 @@
                             </div>
                     </section>
                     <!--projects-->
-                    <section class="projects contaner-main">
-                            <div class="contaner">
+                    <section class="projects container-main">
+                            <div class="container">
                                 <h2 class="title-cection">Чем мы занимаемся</h2>
                                 <ul class="list-item">
                                     <li class="card-item">
@@ -158,13 +157,13 @@
                             </div> 
                     </section>
                     <!--team-->
-                    <section class="team contaner-main">
-                        <div class="contaner">
+                    <section class="team container-main">
+                        <div class="container">
                             <h2 class="title-cection">Наша команда</h2>
                                 <ul class="list-item">
                                         <li class="manager-card">
 
-                                            <picture class="about__list-picture">
+                                            <picture class="manager-picture">
                                                 <source srcset="../images/team/desk-team-img1.webp 1x, ./images/team/desk-team-img1@2x.webp 2x"
                                                     media="(min-width: 1200px)" type="image/webp">
                                             
@@ -223,7 +222,7 @@
                                         </li>
                                         <li class="manager-card">
 
-                                            <picture class="about__list-picture">
+                                            <picture class="manager-picture">
                                                 <source srcset="../images/team/desk-team-img2.webp 1x, ./images/team/desk-team-img2@2x.webp 2x"
                                                     media="(min-width: 1200px)" type="image/webp">
                                             
@@ -281,7 +280,7 @@
                                         </li>
                                         <li class="manager-card">
 
-                                            <picture class="about__list-picture">
+                                            <picture class="manager-picture">
                                                 <source srcset="../images/team/desk-team-img3.webp 1x, ./images/team/desk-team-img3@2x.webp 2x"
                                                     media="(min-width: 1200px)" type="image/webp">
                                             
@@ -338,7 +337,7 @@
                                         </li>
                                         <li class="manager-card">
 
-                                            <picture class="about__list-picture">
+                                            <picture class="manager-picture">
                                                 <source srcset="../images/team/desk-team-img4.webp 1x, ./images/team/desk-team-img4@2x.webp 2x"
                                                     media="(min-width: 1200px)" type="image/webp">
                                             
@@ -397,8 +396,8 @@
                         </div>
                     </section>
                     <!-- clients -->
-                    <section class="contaner-main">
-                        <div class="contaner">
+                    <section class="container-main">
+                        <div class="container">
                             <h2 class="title-cection">Постоянные клиенты</h2>
                             <ul class="clients-list">
                                 <li class="clients-item">
@@ -449,7 +448,7 @@
                     </section>
         </main>
         <footer class="footer">
-            <div class="contaner">
+            <div class="container">
                 <h1 hidden>Адресс компании и ссылки на соц-сети</h1>
                 <div class="footer-box footer-social">
                     <a href="./index.html" class="logo">Web<span class="logo-down">Studio</span></a>
@@ -569,30 +568,52 @@
             </div>
         </div>
 
-        <!-- MENU -->
-        <div data-menu class="menu-contaner" id="menu-contaner">
-<nav>
-    <ul class="nav">
-        <li class="item-nav"><a href="./index.html" class="nav-link current">Студия</a></li>
-        <li class="item-nav"><a href="./portfolio/portfolio.html" class="nav-link">Портфолио</a></li>
-        <li class="item-nav"><a href="#" class="nav-link">Контакты</a></li>
-    </ul>
-</nav>
-<div class="nav">
-    <a href="mailto:info@devstudio.com" class="link">
-        <svg class="nav-icon" width="16" height="12">
-            <use href="./images/sprite.svg#.icon-envelope"></use>
-        </svg>
-        info@devstudio.com
-    </a>
-    <a href="tel:+380961111111" class="link">
-        <svg class="nav-icon" width="10" height="16">
-            <use href="./images/sprite.svg#.icon-phone"></use>
-        </svg>
-        +38 096 111 11 11
-    </a>
-</div>
-        </div>
+        <!-- MENU id="menu-container" class="backdrop is-open" -->
+            <div data-menu class="menu-container">
+                <nav>
+                    <ul class="menu-nav">
+                        <li class="menu-item-nav"><a href="index.html" class="menu-link menu-current">Студия</a></li>
+                        <li class="menu-item-nav"><a href="/portfolio/portfolio.html" class="menu-link">Портфолио</a></li>
+                        <li class="menu-item-nav"><a href="#" class="menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-contacts">
+                    <a href="tel:+380961111111" class="link menu-current">+38 096 111 11 11</a>
+                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                </div>
+
+                <div class="menu-social-box">
+                    <ul class="menu-social">
+                        <li class="menu-social-item">
+                            <a href="#" class="link-social-item">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="#" class="link-social-item">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="#" class="link-social-item">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="#" class="link-social-item">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button data-menu-close class="menu-button-close" type="button" aria-expanded="false" aria-controls="menu-container">
+                    <svg class="menu-icon-close" width="18" height="18">
+                        <use href="./images/sprite.svg#.icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+
+
         <script src="./js/modal.js"></script>
         <script src="./js/menu.js"></script>
 

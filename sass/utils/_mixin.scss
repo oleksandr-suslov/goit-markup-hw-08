@@ -12,3 +12,9 @@
   font-size: $fs * 1px;
   line-height: $lh-my;
 }
+@mixin font($fw: 700, $fs: 14px, $lh: 24px, $ls: 0.03em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh/$fs);
+  letter-spacing: $ls;
+}
