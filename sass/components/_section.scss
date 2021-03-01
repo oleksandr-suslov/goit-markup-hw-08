@@ -7,7 +7,7 @@
 
 %hero-fon-decoration {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: $footer-background;
 }
@@ -32,7 +32,7 @@
       ),
       url("../images/hero/mob-fon-hero@2x.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: $footer-background;
   }
@@ -237,7 +237,7 @@
       ),
       url("../images/hero/tab-fon-hero.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: $footer-background;
   }
@@ -251,7 +251,7 @@
         ),
         url("../images/hero/tab-fon-hero@2x.jpg");
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: $footer-background;
     }
@@ -293,7 +293,7 @@
       ),
       url("../images/hero/desk-fon-hero.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: $footer-background;
   }
@@ -313,7 +313,7 @@
         ),
         url("../images/hero/desk-fon-hero@2x.jpg");
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: $footer-background;
     }
