@@ -37,12 +37,12 @@
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
-    .nav-icon {
-      fill: currentColor;
-      margin-right: 8px;
-      width: 14px;
-      height: 10px;
-    }
+  }
+  .nav-icon {
+    fill: currentColor;
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
   }
   .nav-link {
     color: $heading-background;
@@ -116,11 +116,11 @@
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    .nav-icon {
-      margin-right: 10px;
-      width: 16px;
-      height: 12px;
-    }
+  }
+  .nav-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
   }
 
   .contacts {

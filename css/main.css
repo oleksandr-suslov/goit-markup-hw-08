@@ -115,11 +115,11 @@ img {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  .header .nav-icon {
+  .nav-icon {
     fill: currentColor;
     margin-right: 8px;
     width: 14px;
-    height: 10px;
+    height: 14px;
   }
   .nav-link {
     color: #212121;
@@ -184,10 +184,10 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
   }
-  .header .nav-icon {
+  .nav-icon {
     margin-right: 10px;
     width: 16px;
-    height: 12px;
+    height: 16px;
   }
   .contacts {
     display: flex;
