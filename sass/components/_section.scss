@@ -12,13 +12,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 118px 0px 118px;
-  background-image: url("../images/hero/mob-fon-hero.jpg");
+  background-image: url("./images/hero/mob-fon-hero.jpg");
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/mob-fon-hero@2x.jpg");
+    background-image: url("./images/hero/mob-fon-hero@2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -53,6 +53,9 @@
 }
 
 .list-box {
+  .text-adtantage {
+    font-weight: 400;
+  }
   margin: 15px;
   max-width: 450px;
 }
@@ -214,7 +217,7 @@
 //tablet================================================================================
 @media screen and (min-width: 768px) {
   .hero {
-    background: url("../images/hero/tab-fon-hero.jpg");
+    background: url("./images/hero/tab-fon-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -222,7 +225,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background: url("../images/hero/tab-fon-hero@2x.jpg");
+      background: url("./images/hero/tab-fon-hero@2x.jpg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -253,16 +256,16 @@
 @media screen and (min-width: 1200px) {
   .hero {
     background: url("../images/hero/desk-fon-hero.jpg");
-    //   background-repeat: no-repeat;
-    //   background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
       background: url("../images/hero/desk-fon-hero@2x.jpg");
-      // background-repeat: no-repeat;
-      // background-position: center;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -279,12 +282,12 @@
   }
   .list-box {
     max-width: calc((100% - 120px) / 4);
+    .text-adtantage {
+      padding-top: 10px;
+    }
   }
   .manager-card {
     max-width: calc((100% - 120px) / 4);
-  }
-  .text-adtantage {
-    font-weight: 400;
   }
   .title-cection {
     @include font-height(36, 42.19);
@@ -317,11 +320,6 @@
       text-transform: uppercase;
       color: $white-color;
     }
-  }
-
-  .text-adtantage {
-    font-weight: 400;
-    padding-top: 10px;
   }
   .clients-item {
     max-width: calc((100% - 180px) / 6);
