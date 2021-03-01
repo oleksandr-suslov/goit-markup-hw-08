@@ -5,22 +5,36 @@
   margin-right: auto;
 }
 
-// ===HERO===
-.hero {
-  background-color: $footer-background;
+%hero-fon-decoration {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: $footer-background;
+}
+
+// ===HERO===
+.hero {
   padding: 118px 0px 118px;
-  background-image: url("./images/hero/mob-fon-hero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/mob-fon-hero.jpg");
+  @extend %hero-fon-decoration;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("./images/hero/mob-fon-hero@2x.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/mob-fon-hero@2x.jpg");
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $footer-background;
   }
 }
 
@@ -217,17 +231,29 @@
 //tablet================================================================================
 @media screen and (min-width: 768px) {
   .hero {
-    background: url("./images/hero/tab-fon-hero.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/tab-fon-hero.jpg");
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $footer-background;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background: url("./images/hero/tab-fon-hero@2x.jpg");
-      background-repeat: no-repeat;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/tab-fon-hero@2x.jpg");
       background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: $footer-background;
     }
   }
 
@@ -255,28 +281,44 @@
 //desktop==================================================================================
 @media screen and (min-width: 1200px) {
   .hero {
-    background: url("../images/hero/desk-fon-hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-      background: url("../images/hero/desk-fon-hero@2x.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }
-
-  .hero {
     padding: 200px 0 200px;
     .hero-title {
       @include font-height(44, 60);
       max-width: 696px;
       padding: 0 10px;
     }
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/desk-fon-hero.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $footer-background;
   }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      padding: 200px 0 200px;
+      .hero-title {
+        @include font-height(44, 60);
+        max-width: 696px;
+        padding: 0 10px;
+      }
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/desk-fon-hero@2x.jpg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: $footer-background;
+    }
+  }
+
   .container-main {
     padding: 94px 0 94px;
   }
