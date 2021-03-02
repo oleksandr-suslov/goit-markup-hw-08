@@ -1229,5 +1229,8 @@ img {
     max-width: 370px;
     height: 404px;
   }
+  .description-item {
+    max-height: 110px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
